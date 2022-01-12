@@ -1,11 +1,17 @@
 ---
-title: Color Theory
-author: <Corn Code/> 
-date: 2021-12-17
-tags: ["post", "featured", "latest"]
-image: /assets/blog/post1.png
 alt: color theory image
-description: Color theory is collection of basic rules that every designer should know. Color theory can help designers create better designs that not only look good, but also to communicate with users. Colors can give life to our projects, but they can also affect our mood and perceptions.
+title: Color Theory
+description: Color theory is collection of basic rules that every designer
+  should know. Color theory can help designers create better designs that not
+  only look good, but also to communicate with users. Colors can give life to
+  our projects, but they can also affect our mood and perceptions.
+author: <Corn Code/>
+date: 2021-12-17
+tags:
+  - post
+  - featured
+image: /assets/blog/post1.png
+imageAlt: color theory image
 ---
 
 Color theory is collection of basic rules that every designer should know. Color theory can help designers create better designs that not only look good, but also to communicate with users. Colors can give life to our projects, but they can also affect our mood and perceptions. Even ancient civilizations noticed this fact, and used it for 'color therapy'.
