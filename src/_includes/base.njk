@@ -36,10 +36,23 @@
         <meta property="twitter:description" content="I'm frontend developer and I'm keen on technology, coding and design. This space is used by me to show my progress and share with you some cool things such as: dev tips, design tricks, new technologies, and many, many more.">
         <meta property="twitter:image" content="assets/img/thumbnail.png">
 
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
-<body>
-    {% include 'header.njk'%}
-    {{ content | safe }}
-    {% include 'footer.njk'%}
-</body>
+    <body>
+        {% include 'header.njk'%}
+        {{ content | safe }}
+        {% include 'footer.njk'%}
+
+        <script>
+            if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                    });
+                }
+                });
+            }
+        </script>
+    </body>
 </html>
