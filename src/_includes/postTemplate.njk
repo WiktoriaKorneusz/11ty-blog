@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=
+    , initial-scale=1.0"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>{{ title }}</title>
+        <link rel="icon" href="/../assets/img/logo1.svg" />
+        <script
+            src="https://kit.fontawesome.com/86e4c9f4e1.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="../../../style.css" />
+</head>
+<body class="dark">
+    {% include 'postHeader.njk'%}
+    {{ content | safe }}
+    {% include 'footer.njk'%}
+    <script src="/../assets/scripts/toggle.js"></script>
+</body>
+</html>

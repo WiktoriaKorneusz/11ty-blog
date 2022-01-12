@@ -1,0 +1,29 @@
+<li>
+    <article class="latest__posts__post">
+        <img
+            src="{{post.data.image}}"
+            alt="{{post.data.imageAlt}}"
+            class="latest__posts__post__image"
+        /> 
+        <div class="latest__posts__post__box">
+            <h3 class="latest__posts__post__box__title">
+                <a href="{{ post.url }}" class="inside-link" target="_blank" data-post="post3"
+                    >{{post.data.title}}</a
+                >
+            </h3>
+            <p class="latest__posts__post__box__meta">
+                by <span>{{ post.data.author }}</span> on
+                <span>{{ post.data.date | postDate}}</span>
+            </p>
+            <p class="latest__posts__post__box__body">
+                {{ post.data.description }}
+            </p>
+            <a
+                href="{{ post.url }}" 
+                class="btn btn__primary inside-link" target="_blank" data-post="post3"
+                >Continue Reading</a
+            >
+        </div>
+        
+    </article>
+</li>

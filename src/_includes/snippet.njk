@@ -1,0 +1,28 @@
+<li>
+    <article class="snippet">
+        <img
+            src="{{post.data.image}}"
+            alt="{{post.data.imageAlt}}"
+            class="snippet__image"
+        />
+        <div class="snippet__info">
+            <h3 class="snippet__title">
+                <a href="{{ post.url }}" class="inside-link" target="_blank" data-post="post1"
+                    >{{post.data.title}}</a
+                >
+            </h3>
+            <p class="snippet__meta">
+                by <span> {{post.data.author}}</span> </span> on
+                <span> {{post.data.date | postDate}} </span>
+            </p>
+            <p class="snippet__body">
+                {{ post.data.description }}
+            </p>
+            <a
+                href="{{ post.url }}"
+                class="btn btn__primary inside-link" target="_blank" data-post="post1"
+                >Continue Reading</a
+            >
+        </div>
+    </article>
+</li> 

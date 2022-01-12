@@ -1,0 +1,18 @@
+---
+layout: 'postTemplate.njk'
+---
+<main> 
+        <div id="post">
+            <h1> {{ title }} </h1>
+            <figure class="main-article__figure">
+                <img src="{{ image }}" alt="{{ imageAlt }}">
+                <figcaption>
+                  {{ imageAlt }}
+                </figcaption>
+              </figure>
+              <div class="content">
+
+              {{content | safe}}
+              </div>
+        </div>
+</main>

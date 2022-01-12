@@ -1,0 +1,111 @@
+---
+title: <Corn Code/> blog 
+layout: base.njk
+---
+<main>
+    <div id="home">
+
+        <section id="hero">
+            <div class="hero__container">
+                <div class="hero__container__content">
+                    <h1>Hi, I am Wiktoria, Welcome to my blog!</h1>
+                    <p>
+                        I'm frontend developer and I'm keen on technology,
+                        coding and design. This space is used by me to show
+                        my progress and share with you some cool things such as: dev tips, design tricks, new technologies, and many, many more.
+                    </p>
+                    <nav>
+
+                        <a href="#about" class="inside-link">Read more</a>
+                        <a href="#blog" class="prim-clr inside-link">Latest Articles</a>
+                    </nav>
+                </div>
+                <div class="hero__container__image"></div>
+            </div>
+        </section>
+        <section id="latest">
+            <header class="latest__header">
+                <h2>Latest articles</h2>
+                <a href="#blog" class="inside-link">View all</a>
+            </header>
+            <ul class="latest__posts">
+                {%- for post in collections.latest | reverse -%}
+                    {% include 'latest.njk' %}
+                {%- endfor %}
+                
+                
+                
+            </ul>
+        </section>
+        <section id="featured">
+            <header>
+                <h2>Featured articles</h2>
+            </header>
+            <ul class="featured__posts">
+                {%- for post in collections.featured | reverse -%}
+                    {% include 'snippet.njk' %}
+                {%- endfor %}
+            </ul>
+        </section>
+    </div>
+    <div id="blog">
+        <section id="blog__section">
+            <header> <h1>Latssest posts</h1></header>
+            <ul class="latest-posts">
+                <ul class="latest__posts">
+                    {%- for post in collections.post | reverse -%}
+                        {% include 'snippet.njk' %}
+                    {%- endfor %}
+
+                    
+                    
+            </ul>
+        </section>
+    </div>
+    <div id="about">
+        <header>
+
+            <h2>About me</h2>
+        </header>
+        <section id="about__section">
+            <img class="about__image" src="assets/img/auth.jpg" alt="me">
+            <p>Hello, I am Wiktoria and i come from Poland. i've always ben into creative and tech stuff. since childhood</p>
+            <p>in highschool I joined an artificial intelligence club and started learning coding there. to be honest I was probably the worst and the slowest student there. As an ambitious student during the winter break i learned coding and i fell in love with it. I learned python and i was good at it. In the same year I learned basic css and html thanks to Miroslaw Zelent from <a class="inline-link" href="https://www.youtube.com/c/Pasjainformatykitutoriale/featured" >Pasja Informatyki</a> on youtube. then I decided that I want to become Web Developer</p>
+            <p>Sadly because of school i didn't have time for coding during school year. In 2021 after a holiday I decided that I don't really want to go to college and I want to go to work after highschool graduation, so I went back to coding. I started learning Javascript and fell in love with it.</p>
+            
+        </section>
+    </div>
+    <div id="contact">
+        <h2>Contact</h2>
+        <section id="contact__section">
+            <img src="assets/img/mail.svg" alt="mail image">
+            <form action="https://formsubmit.co/wiktoriakorneusz@gmail.com" method="POST">
+                <div class="name">
+
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name" required>
+                </div>
+                <div class="email">
+
+                    <label for="email">Email</label>
+                    <input type="email" type="email" name="email" id="email" required>
+                </div>
+                <div class="message">
+
+                    <label for="message">Message</label>
+                    <textarea  id="message" class="form-control" name="message" rows="10" required style="resize: none;"></textarea>
+                </div>
+                <input type="hidden" name="_next" value="thankyou.html">
+                <button type="submit">Send</button>
+            </form> 
+            
+        </section>
+    </div>
+    
+</main>
+
+<a href="#" class="top"></a>
+<script src="assets/scripts/burger.js"></script>
+<script src="assets/scripts/toggle.js"></script>
+<script src="assets/scripts/nav.js"></script>        
+
