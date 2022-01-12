@@ -29,8 +29,8 @@ layout: base.njk
                 <a href="#blog" class="inside-link">View all</a>
             </header>
             <ul class="latest__posts">
-                {% for post in collections.post %}
-                {% if loop.index0 < 5 %}
+                {% for post in collections.post | reverse%}
+                {% if loop.index0 < 4 %}
                     {% include 'latest.njk' %}
                 {#  do your processing here or include it #}
                 {% endif%}
