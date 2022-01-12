@@ -9,7 +9,8 @@ description: Many of us might wonder why would we use libraries, when we can
 author: <Corn Code/>
 date: 2022-01-12T11:05:55.971Z
 tags:
-  - postlatest
+  - post
+  - latest
 image: /assets/blog/post4.png
 imageAlt: another 3 great Javascript libraries
 ---
