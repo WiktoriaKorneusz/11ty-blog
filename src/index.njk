@@ -30,9 +30,8 @@ layout: base.njk
             </header>
             <ul class="latest__posts">
                 {% for post in collections.post | reverse%}
-                {% if loop.index0 < 4 %}
+                {% if loop.index0 < 3 %}
                     {% include 'latest.njk' %}
-                {#  do your processing here or include it #}
                 {% endif%}
                 {% endfor %}
                 
