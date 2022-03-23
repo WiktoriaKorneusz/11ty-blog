@@ -9,3 +9,6 @@ image: /assets/blog/1647004429738-the_boy.jpg
 imageAlt: fsdfsdf
 ---
 `var x = "test"`
+```python
+print("Hello World")
+```
